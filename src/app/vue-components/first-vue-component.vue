@@ -4,7 +4,6 @@
     <pre>
     <u>greeting</u>: {{ JSON.stringify(greeting) }} (this is from AngularJs)
     <u>message</u>: {{ JSON.stringify(message) }} (this is from AngularJs)
-    <u>baz</u>: {{ baz }} (this is from AngularJs)
     </pre>
     <p>data</p>
     <ul>
