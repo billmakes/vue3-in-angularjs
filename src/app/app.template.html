@@ -1,0 +1,46 @@
+<div class="angular-component">
+  <h1>Vue3, AngularJs, Events</h1>
+  <p>
+    A demonstration of Vue3 components inside an AngularJs component, with
+    events, using a custom directive.
+  </p>
+
+  <h3>AngularJs App Component</h3>
+
+  <ul>
+    <li>{{$ctrl.data}}</li>
+    <li>{{$ctrl.greeting|json}}</li>
+    <li>{{$ctrl.message}}</li>
+    <li>{{scopeVar|json}}</li>
+  </ul>
+
+  <p>
+    'ng-vue' is an AngularJs directive. It loads a Vue component by finding a
+    Vue component name from it's element name.
+  </p>
+
+  <pre>
+  &lt;<b>FirstVueComponent</b> <b>ng-vue</b>
+    <u>greeting</u>="$ctrl.greeting"
+    <u>message</u>="$ctrl.message"
+    <u>data</u>="$ctrl.data"
+    <u>ng-click</u>="$ctrl.alert($event)"
+    <u>v-on:my-event</u>="$ctrl.handleEvent($event)">&lt;/<b>MyVueComponent</b>>
+  </pre>
+
+  <FirstVueComponent
+    ng-vue
+    greeting="$ctrl.greeting"
+    message="$ctrl.message"
+    data="$ctrl.data"
+    ng-click="$ctrl.alert($event)"
+    v-on:my-event="$ctrl.handleEvent($event)"
+  >
+  </FirstVueComponent>
+
+  <pre>
+   &lt;<b>SecondVueComponent ng-vue</b> greeting="$ctrl.greeting">
+   &lt;/<b>SecondVueComponent</b>></pre>
+
+  <SecondVueComponent ng-vue greeting="$ctrl.greeting"> </SecondVueComponent>
+</div>
