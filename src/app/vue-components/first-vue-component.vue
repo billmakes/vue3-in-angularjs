@@ -1,5 +1,6 @@
 <template>
   <div class="vue-component">
+    <div id="title">Vue Component #1</div>
     <h3>first vue component</h3>
     <pre>
     <u>greeting</u>: {{ JSON.stringify(greeting) }} (this is from AngularJs)

@@ -18,11 +18,13 @@
 import * as Vue from "vue";
 import FirstVueComponent from "../vue-components/first-vue-component.vue";
 import SecondVueComponent from "../vue-components/second-vue-component.vue";
+import ThirdVueComponent from "../vue-components/third-vue-component.vue";
 
 // Vue component registry
 const VUE_COMPONENTS = {
   FirstVueComponent,
   SecondVueComponent,
+  ThirdVueComponent,
 };
 
 // Build a dynamic scope for compile

@@ -1,6 +1,32 @@
 .angular-component {
-  background-color: azure;
+  background-color: rgb(249, 185, 185);
+  border: black 1px dotted;
+  padding: 20px;
+  margin: 5px;
+  margin-top: 20px;
 }
+
+.angular-component #title {
+  position: relative;
+  top: -1.75em;
+  padding: 2.5px;
+  display: inline;
+  background-color: tomato;
+  border: black 1px dotted;
+}
+
 .vue-component {
+  margin: 20px;
+  padding: 20px;
   background-color: aquamarine;
+  border: black 1px dotted;
+}
+
+.vue-component #title {
+  position: relative;
+  top: -1.75em;
+  padding: 2.5px;
+  display: inline;
+  background-color: aqua;
+  border: black 1px dotted;
 }
